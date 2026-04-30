@@ -1,0 +1,114 @@
+.header-custom {
+    background-color: #082f83 !important; 
+    border-bottom: 3px solid #ffcc00; 
+}
+
+/* --- Root Variables --- */
+:root {
+    --biru-tua: #030303;
+    --biru-hover: #0a0dd4;
+    --bg-hijau: #dce4e9;
+    --bg-abu: #f8f9fa;
+    --border-input: #ddd;
+}
+
+/* --- Global Styles --- */
+body {
+    background-color: var(--bg-hijau);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+/* --- Login Card Styles --- */
+.login-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    width: 100%;
+    max-width: 380px;
+}
+
+.logo-img {
+    width: 80px;
+}
+
+.school-name {
+    color: var(--biru-tua);
+    font-weight: 700;
+}
+
+/* --- Dashboard & Guru Card Styles --- */
+.card-guru {
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.card-guru:hover {
+    transform: translateY(-5px);
+}
+
+.profile-img {
+    width: 80px; 
+    height: 80px; 
+    border-radius: 50%; 
+    object-fit: cover;
+    border: 2px solid #000000;
+}
+
+.detail-card {
+    border-radius: 15px; 
+    background-color: #f0f7ff;
+    border: 1px solid #999595;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+}
+
+/* --- Form Input & Select Styles --- */
+.custom-input {
+    border-radius: 8px;
+    padding: 10px 15px;
+    border: 1px solid var(--border-input);
+}
+
+.form-select.custom-input, 
+.form-control.custom-input {
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    padding: 10px;
+}
+
+.form-select.custom-input:focus, 
+.form-control.custom-input:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15);
+}
+
+/* --- Button Styles --- */
+.btn-primary-custom {
+    background-color: var(--biru-tua);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-primary-custom:hover {
+    background-color: var(--biru-hover);
+}
+
+/* --- Modal Styles --- */
+.modal-header {
+    background-color: #f8f9fa;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    font-weight: bold;
+}
